@@ -1,0 +1,59 @@
+{
+	"About":
+	{
+		"Name": "String Add",
+		"Author": "LB",
+		"Copyright": "Copyright © 2012 LB-Stuff",
+		"Comment": "Performs quick string concatenation.\n\nMade for Pharanygitis.",
+		"URL": "http://www.LB-Stuff.com/",
+		"Help": "Help/",
+		"Identifier": "Str+"
+	},
+
+	"ActionMenu":
+	[
+		"Separator",
+		[0, "Add to string"],
+		[1, "Reset string"],
+		"Separator"
+	],
+	"ConditionMenu":
+	[
+		"Separator",
+		[0, "Compare to string for equality"]
+	],
+	"ExpressionMenu":
+	[
+		"Separator",
+		[0, "Get string"],
+		"Separator"
+	],
+
+	"Actions":
+	[
+		{	"Title": "Add %0 to string",
+			"Parameters":
+			[
+				["String", "String to add"]
+			]
+		},
+		{	"Title": "Reset string"
+		}
+	],
+	"Conditions":
+	[
+		{	"Title": "%o: String = %0",
+			"Parameters":
+			[
+				["String", "String to compare to"]
+			],
+			"Triggered": false
+		}
+	],
+	"Expressions":
+	[
+		{	"Title": "Get String$(",
+			"Returns": "Text"
+		}
+	]
+}
